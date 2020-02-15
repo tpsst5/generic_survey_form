@@ -9,7 +9,7 @@ This project was complete in order to practice basic html and css.
 - CSS
 
 ## Setup: 
-The live version of this webpage can be seen [here](https://tpsst5.github.io/douglas_adams_tribute/).
+The live version of this webpage can be seen [here](https://tpsst5.github.io/generic_survey_form/).
 
 ## Status:
 This project is complete.
