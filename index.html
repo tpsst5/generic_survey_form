@@ -1,0 +1,249 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Studying Survey Form</h1>
+            <p id="description" class="text-center"><i>Thank you for taking the time to help us improve our curriculum.</i></p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input 
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input
+                    type="number"
+                    name="age"
+                    id="number"
+                    min="10"
+                    max="99"
+                    class="form-control"
+                    placeholder="Age"
+                />
+            </div>
+
+            <div class="form-group">
+                <p>Which best describes your current occupation?</p>
+                <select id="dropdown" name="occupation" class="form-control" required>
+                    <option disabled selected value>Select current occupation</option>
+                    <option value="Front-End Web Developer">Front-End Web Developer</option>
+                    <option value="Back-End Web Developer">Back-End Web Developer</option>
+                    <option value="Full-Stack Web Developer">Full-Stack Web Developer</option>
+                    <option value="Web Designer">Web Designer</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Student">Student</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Which best describes your proficiency level?</p>
+                <label>
+                    <input
+                        name="user-proficiency"
+                        value="beginner"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                    />Beginner</label>
+                <label>
+                    <input
+                        name="user-proficiency"
+                        value="intermediate"
+                        type="radio"
+                        class="input-radio"
+                    />Intermediate</label>
+                <label>
+                    <input
+                        name="user-proficiency"
+                        value="professional"
+                        type="radio"
+                        class="input-radio"
+                    />Professional</label>
+            </div>
+
+            <div class="form-group">
+                <p>What is your favorite learning method?</p>
+                <select id="favorite-method" name="favorite-method" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="tutorial-videos">Tutorial videos </option>
+                    <option value="reading-documentation">Reading documentation</option>
+                    <option value="coding exercises">Coding exercises</option>
+                    <option value="reading-books">Reading books</option>
+                    <option value="in-person-workshops">In-person workshops</option>
+                    <option value="code-along-projects">Code along projects</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>How many hours per week do you study?</p>
+                <select id="hours-per" name="hours-per" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="less-than-5">Less than 5</option>
+                    <option value="5 to 10">5 to 10</option>
+                    <option value="10 to 15">10 to 15</option>
+                    <option value="15 to 20">15 to 20</option>
+                    <option value="20 to 25">20 to 25</option>
+                    <option value="25 to 30">25 to 30</option>
+                    <option value="more-than-30">More than 30</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>What languages and technologies are you familiar with?<span class="clue">(Check all that apply)</span></p>
+                <label>
+                    <input
+                        name="technologies"
+                        value="html"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />HTML
+                </label>
+                <label>
+                    <input
+                        name="technologies"
+                        value="css"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />CSS
+                </label>
+                <label>
+                    <input  
+                        name="technologies"
+                        value="bootstrap"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Bootstrap
+                </label>
+                <label>
+                    <input
+                        name="technologies"
+                        value="git"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Git
+                </label>
+                <label>
+                    <input
+                        name="technologies"
+                        value="javascript"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />JavaScript
+                </label>
+                <label>
+                    <input
+                        name="technologies"
+                        value="jquery"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />JQuery
+                </label>
+                <label>
+                    <input
+                        name="technologies"
+                        value="nodejs"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />NodeJS
+                </label>
+                <label>
+                    <input
+                        name="technologies"
+                        value="php"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />PHP
+                </label>
+                <label>
+                    <input
+                        name="technologies"
+                        value="c#"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />C#
+                </label>
+                <label>
+                    <input
+                        name="technologies"
+                        value="c++"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />C++
+                </label>
+                <label>
+                    <input
+                        name="technologies"
+                        value="ruby"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Ruby
+                </label>
+                <label>
+                    <input
+                        name="technologies"
+                        value="java"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Java
+                </label>
+                <label>
+                    <input
+                        name="technologies"
+                        value="drupal"
+                        type="checkbox"
+                        class="input-checkbox"
+                    />Drupal
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Enter your comments here..."
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+
+        </form>
+    </div>  
+    
+</body>
